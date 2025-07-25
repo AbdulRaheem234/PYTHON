@@ -5,12 +5,13 @@ class Employee:
     def getInfo(self):
         print(f"The language is {self.language}. The salary is {self.salary}")
 
-    def greet(self):
+    @staticmethod
+    def greet():
         print("Good morning")
 
 
 harry = Employee()
 # print(harry.language, harry.salary)
 # Employee.getInfo(harry)
-harry.getInfo()
 harry.greet()
+harry.getInfo()
